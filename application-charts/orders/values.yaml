@@ -3,7 +3,7 @@ deployment:
   enabled: true
   name: orders
   namespace: ecommerce
-  replicas: 3
+  replicas: 1
   appName: orders
   role: api
   containerName: orders-container
@@ -16,21 +16,3 @@ hpa:
   name: orders-hpa
   namespace: ecommerce
 # Service object
-service:
-  enabled: false
-serviceAccount:
-  enabled: true
-  name: orders-service-account
-  namespace: ecommerce
-# Namespace object
-namespace:
-  enabled: false
-# Ingress 
-ingress:
-  enabled: true
-  name: orders
-  namespace: ecommerce
-  host: lukemwila.com
-  path: "/"
-  serviceName: orders
-  servicePort: 80
