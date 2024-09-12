@@ -18,7 +18,6 @@ hpa:
 # Service object
 service:
   enabled: false
-
 serviceAccount:
   enabled: true
   name: orders-service-account
@@ -35,3 +34,6 @@ ingress:
   path: "/"
   serviceName: orders
   servicePort: 80
+orders:
+  newDeployment:
+    imageTag: sha256:63f2ce6362b28fc7d30173cac7dc28290ad6b1ec87215ff32e2f21e21e8e1fd5
