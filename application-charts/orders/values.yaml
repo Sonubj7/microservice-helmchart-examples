@@ -10,9 +10,3 @@ deployment:
   imageRepository: sonubj/microservices
   imageTag: 0.3.1
   port: 3003
-# Horizontal Pod Autoscaler
-hpa:
-  enabled: true
-  name: orders-hpa
-  namespace: ecommerce
-# Service object
