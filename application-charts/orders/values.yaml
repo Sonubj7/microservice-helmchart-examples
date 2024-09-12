@@ -1,0 +1,37 @@
+# Deployment object
+deployment:
+  enabled: true
+  name: orders
+  namespace: ecommerce
+  replicas: 3
+  appName: orders
+  role: api
+  containerName: orders-container
+  imageRepository: sonubj/microservices
+  imageTag: 0.2.1
+  port: 3003
+# Horizontal Pod Autoscaler
+hpa:
+  enabled: true
+  name: orders-hpa
+  namespace: ecommerce
+# Service object
+service:
+  enabled: false
+
+serviceAccount:
+  enabled: true
+  name: orders-service-account
+  namespace: ecommerce
+# Namespace object
+namespace:
+  enabled: false
+# Ingress 
+ingress:
+  enabled: true
+  name: orders
+  namespace: ecommerce
+  host: lukemwila.com
+  path: "/"
+  serviceName: orders
+  servicePort: 80
