@@ -8,5 +8,5 @@ deployment:
   role: api
   containerName: orders-container
   imageRepository: sonubj/microservices
-  imageTag: sha256:9ed36b6b3b97e9af28cce1b99c7c9a1af0c32075456439b0303cb22a4a05cfb2
+  imageTag: 0.3.2
   port: 3003
