@@ -2,7 +2,7 @@
 deployment:
   enabled: true
   name: orders
-  namespace: ecommerce
+  namespace: cattle-monitoring-system
   replicas: 1
   appName: orders
   role: api
