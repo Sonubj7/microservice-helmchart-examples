@@ -7,6 +7,6 @@ deployment:
   appName: orders
   role: api
   containerName: orders-container
-  imageRepository: sonubj/microservices
+  imageRepository: sonubj/microservicessssss
   imageTag: 0.3.17
   port: 3003
